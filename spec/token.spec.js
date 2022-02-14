@@ -1,7 +1,8 @@
 const {
     createToken,
     createTokenWithExpiry,
-    verifyToken
+    verifyToken,
+    createTokenQ4
 } = require('../src/token');
 
 const payload = {
@@ -44,3 +45,5 @@ describe("verifyToken", () => {
         expect(result).toBeFalse();
     });
 });
+
+createTokenQ4();
